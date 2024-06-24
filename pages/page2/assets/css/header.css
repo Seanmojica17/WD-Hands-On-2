@@ -9,7 +9,7 @@
 nav {
     position: relative;
     height: 50px;
-    background: #222;
+    background: #ece000;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@ nav span {
     position: absolute;
     width: 95px;
     height: 100%;
-    background: linear-gradient(45deg, #283907, #033612);
+    background: linear-gradient(45deg, #b50427, #dc153d);
     border-radius: 8px;
     transition: .5s ease;
 }
