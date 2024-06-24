@@ -1,3 +1,1 @@
-$(".theme-switch").on("click", () => {
-    $("body").toggleClass("light-theme");
-  });   
+feather.replace()
