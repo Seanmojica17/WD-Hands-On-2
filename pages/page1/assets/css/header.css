@@ -66,6 +66,5 @@ nav a:nth-child(7):hover~span {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  filter: sepia(0.4) hue-rotate(-10deg) opacity(0.6);
 }
 
