@@ -4,25 +4,20 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+  <a href="https://github.com/Seanmojica17">
+    <img src="/assets/img/Brown Simple Interior Furniture Initial Logo.png" alt="Mojics" width="130" height="100">
   </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+
+  <h3 align="center">Heroes and Cards</h3>
 </div>
-<!-- TODO: Make a short description -->
+
 <div align="center">
-  Short Description. (Optional)
+    Landing pages are HTML and CSS-based web pages created specifically for marketing campaigns to increase user engagement and drive specified behaviors.
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
-
----
+![visits](https://visit-counter.vercel.app/counter.png?page=https%3A%2F%2Fgithub.com%2FSeanmojica17%2FWD-Hands-On-2&s=40&c=e03910&bg=00000000&no=1&ff=electrolize&tb=&ta=)
 
 <br />
 <br />
@@ -60,17 +55,16 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+- Making different kinds of heroes and card-gallery
+- Landing pages and cards are essential for marketing goals and user engagement strategies. Lead generation pages collect user information, while click-through landing pages encourage    visitors to click through. Content, profile, and product cards enhance user experience, driving specific actions and supporting marketing objectives.
+- Key components of landing pages, cards, and other marketing tools include appealing headlines, clear calls to action, user-friendly forms, visual elements, short text, and interactive buttons.
+- We used HTML, CSS and JAVASCRIPT
 
-### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+### Key ComponentS
+- HTML
+- CSS
+- JAVASCRIPT
+- SCSS
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -117,4 +111,13 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+|Github|Purpose is to get idea from html only.|https://github.com/zyx-0314/WD-Hands-on-2|
+|Giphy|To get some background and for cards|https://giphy.com/|
+|WSupercars|To get some different photos|https://www.wsupercars.com/|
+|Dev Snap|To get some card designs|https://devsnap.me/css-card|
+|Cards|To get some card designs|https://codepen.io/|
+|Devdevout|To get some card design|https://devdevout.com/|
+|Youtube|To get some card design and Navigation Bar|https://www.youtube.com/|
+|Freefrontend|To get some card designs|https://freefrontend.com/|
+
+

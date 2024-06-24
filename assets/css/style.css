@@ -20,7 +20,7 @@ body {
 }
 
 .navMenu a {
-  color: #f6f4e6;
+  color: #010101;
   text-decoration: none;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -112,3 +112,49 @@ body {
   overflow: hidden;
   filter: sepia(0.4) hue-rotate(-10deg) opacity(0.6);
 }
+
+.top {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  align-items: center;
+  gap: 0.2rem;
+  height: 80vh;
+
+  & .subject {
+    font-size: 3rem;
+    letter-spacing: 0.8rem;
+    font-weight: 300;
+  }
+
+  & .title {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    padding-left: 7rem;
+  }
+
+  & .subtitle {
+    font-weight: 500;
+    letter-spacing: 1rem;
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+
+  & .section {
+    font-weight: 900;
+  }
+
+  & .logo {
+    height: 50px;
+  }
+
+  & .narrative {
+    font-weight: 900;
+  }
+}
+
