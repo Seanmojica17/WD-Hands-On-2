@@ -586,7 +586,7 @@
     background-repeat: no-repeat;
     box-shadow: 0 0 80px -10px black;
     overflow: hidden;
-    background-image: url("");
+    background-image: url("../../img/cropped-1800-1440-1330242.jpeg");
 }
 
 .card-blur2 {
@@ -714,9 +714,7 @@ svg#curve2 {
 }
 
 
-.card2 {
-    background-image: url("../page4/assets/img/cropped-1800-1440-1330242.jpeg")
-}
+
 
 /* STATIC */
 .card22 {
@@ -730,6 +728,7 @@ svg#curve2 {
     background-repeat: no-repeat;
     box-shadow: 0 0 80px -10px black;
     overflow: hidden;
+    background-image: url("../../img/cropped-1800-1440-1330242.jpeg");
    
 }
 
