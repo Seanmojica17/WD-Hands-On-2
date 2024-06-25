@@ -64,7 +64,6 @@ Guiding Question:
 - HTML
 - CSS
 - JAVASCRIPT
-- SCSS
 
 ### Technology
 <!-- TODO: List of Technology Used -->
