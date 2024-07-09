@@ -34,30 +34,30 @@ nav span {
     transition: .5s ease;
 }
 nav a:nth-child(1):hover~span {
-    left:475px;
+  left:564px;
 }
 nav a:nth-child(2):hover~span {
-    left: 570px;
+  left: 658px;
 }
 nav a:nth-child(3):hover~span {
-    left: 665px;
-    width: 95px;
+  left: 753px;
+  width: 95px;
 }
 nav a:nth-child(4):hover~span {
-    left: 765px;
-    width: 95px;
+  left: 849px;
+  width: 95px;
 }
 nav a:nth-child(5):hover~span {
-    left: 860px;
-    width: 95px;
+  left: 949px;
+  width: 95px;
 }
 nav a:nth-child(6):hover~span {
-    left: 960px;
-    width: 95px;
+  left: 1045px;
+  width: 95px;
 }
 nav a:nth-child(7):hover~span {
-    left: 1055px;
-    width: 195px;
+  left: 1146px;
+  width: 195px;
 }
 
 .wallpaper {
