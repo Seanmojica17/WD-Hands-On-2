@@ -11,7 +11,7 @@
 nav {
     position: relative;
     height: 50px;
-    background: #057d15;
+    background: #b83959;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,29 +34,29 @@ nav span {
     transition: .5s ease;
 }
 nav a:nth-child(1):hover~span {
-  left:485px;
+  left:573px;
 }
 nav a:nth-child(2):hover~span {
-  left: 579px;
+  left: 666px;
 }
 nav a:nth-child(3):hover~span {
-  left: 674px;
+  left: 762px;
   width: 95px;
 }
 nav a:nth-child(4):hover~span {
-  left: 770px;
+  left: 858px;
   width: 95px;
 }
 nav a:nth-child(5):hover~span {
-  left: 868px;
+  left: 955px;
   width: 95px;
 }
 nav a:nth-child(6):hover~span {
-  left: 965px;
+  left: 1053px;
   width: 95px;
 }
 nav a:nth-child(7):hover~span {
-  left: 1062px;
+  left: 1151px;
   width: 195px;
 }
 
@@ -73,6 +73,7 @@ nav a:nth-child(7):hover~span {
 
 
 /* Style */
+
 
 .container{
   position: relative;
@@ -118,8 +119,13 @@ nav a:nth-child(7):hover~span {
 }
 
 .container .card .face.face1 .content img{
-  max-width: 100px;
+  width: 300px; /* Adjust this value to make the content larger */
+  height: 200px; /* Adjust this value to make the content larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .container .card .face.face1 .content h3{
   margin: 10px 0 0;
