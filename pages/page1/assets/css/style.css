@@ -62,7 +62,7 @@ nav a:nth-child(7):hover~span {
 
 
 .wallpaper {
-  position: absolute;
+  position: fixed;
   object-fit: cover;
   z-index: -1;
   width: 100%;
@@ -77,15 +77,6 @@ nav a:nth-child(7):hover~span {
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
 
-:root {
-  /* Colors */
-  --brand-color: hsl(46, 100%, 50%);
-  --black: hsl(0, 0%, 0%);
-  --white: hsl(0, 0%, 100%);
-  /* Fonts */
-  --font-title: "Montserrat", sans-serif;
-  --font-text: "Lato", sans-serif;
-}
 
 /* RESET */
 
@@ -132,12 +123,12 @@ p {
 .content {
   display: flex;
   flex-direction: row;
-  gap: 60px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
 }
 
-.card {
+.card1 {
   display: grid;
   place-items: center;
   width: 100vw;
@@ -146,20 +137,26 @@ p {
   overflow: hidden;
   border-radius: 0.625rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  --brand-color: hsl(239, 100%, 50%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
 }
 
-.card > * {
+.card1 > * {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
-.card__background {
+.card__background1 {
   object-fit: cover;
   max-width: 100%;
   height: 100%;
 }
 
-.card__content {
+.card__content1 {
   --flow-space: 0.9375rem;
   display: flex;
   flex-direction: column;
@@ -175,17 +172,17 @@ p {
   );
 }
 
-.card__content--container {
+.card__content--container1 {
   --flow-space: 1.25rem;
 }
 
-.card__title {
+.card__title1 {
   position: relative;
   width: fit-content;
   width: -moz-fit-content; /* Prefijo necesario para Firefox  */
 }
 
-.card__title::after {
+.card__title1::after {
   content: "";
   position: absolute;
   height: 0.3125rem;
@@ -195,7 +192,7 @@ p {
   background-color: var(--brand-color);
 }
 
-.card__button {
+.card__button1 {
   padding: 0.75em 1.6em;
   width: fit-content;
   width: -moz-fit-content; /* Prefijo necesario para Firefox  */
@@ -209,19 +206,19 @@ p {
   color: var(--black);
 }
 
-.card__button:focus {
+.card__button1:focus {
   outline: 2px solid black;
   outline-offset: -5px;
 }
 
 @media (any-hover: hover) and (any-pointer: fine) {
-  .card__content {
+  .card__content1 {
     transform: translateY(62%);
     transition: transform 500ms ease-out;
     transition-delay: 500ms;
   }
 
-  .card__title::after {
+  .card__title1::after {
     opacity: 0;
     transform: scaleX(0);
     transition: opacity 1000ms ease-in, transform 500ms ease-out;
@@ -229,48 +226,492 @@ p {
     transform-origin: right;
   }
 
-  .card__background {
+  .card__background1 {
     transition: transform 500ms ease-in;
   }
 
-  .card__content--container > :not(.card__title),
-  .card__button {
+  .card__content--container1 > :not(.card__title1),
+  .card__button1 {
     opacity: 0;
     transition: transform 500ms ease-out, opacity 500ms ease-out;
   }
 
-  .card:hover,
-  .card:focus-within {
+  .card1:hover,
+  .card1:focus-within {
     transform: scale(1.05);
     transition: transform 500ms ease-in;
   }
 
-  .card:hover .card__content,
-  .card:focus-within .card__content {
+  .card1:hover .card__content1,
+  .card1:focus-within .card__content1 {
     transform: translateY(0);
     transition: transform 500ms ease-in;
   }
 
-  .card:focus-within .card__content {
+  .card1:focus-within .card__content1 {
     transition-duration: 0ms;
   }
 
-  .card:hover .card__background,
-  .card:focus-within .card__background {
+  .card1:hover .card__background1,
+  .card1:focus-within .card__background1 {
     transform: scale(1.3);
   }
 
-  .card:hover .card__content--container > :not(.card__title),
-  .card:hover .card__button,
-  .card:focus-within .card__content--container > :not(.card__title),
-  .card:focus-within .card__button {
+  .card1:hover .card__content--container1 > :not(.card__title1),
+  .card1:hover .card__button1,
+  .card1:focus-within .card__content--container1 > :not(.card__title1),
+  .card1:focus-within .card__button1 {
     opacity: 1;
     transition: opacity 500ms ease-in;
     transition-delay: 1000ms;
   }
 
-  .card:hover .card__title::after,
-  .card:focus-within .card__title::after {
+  .card1:hover .card__title1::after,
+  .card1:focus-within .card__title1::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
+}
+
+.card2 {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  max-width: 22rem;
+  height: 28.125rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  --brand-color: hsl(199, 70%, 38%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+
+.card2 > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card__background2 {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card__content2 {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+
+.card__content--container2 {
+  --flow-space: 1.25rem;
+}
+
+.card__title2 {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+}
+
+.card__title2::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--brand-color);
+}
+
+.card__button2 {
+  padding: 0.75em 1.6em;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--brand-color);
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  color: var(--black);
+}
+
+.card__button2:focus {
+  outline: 2px solid black;
+  outline-offset: -5px;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  .card__content2 {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  .card__title2::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  .card__background2 {
+    transition: transform 500ms ease-in;
+  }
+
+  .card__content--container2 > :not(.card__title2),
+  .card__button2 {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .card2:hover,
+  .card2:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  .card2:hover .card__content2,
+  .card2:focus-within .card__content2 {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  .card2:focus-within .card__content2 {
+    transition-duration: 0ms;
+  }
+
+  .card2:hover .card__background2,
+  .card2:focus-within .card__background2 {
+    transform: scale(1.3);
+  }
+
+  .card2:hover .card__content--container2 > :not(.card__title2),
+  .card2:hover .card__button2,
+  .card2:focus-within .card__content--container2 > :not(.card__title2),
+  .card2:focus-within .card__button2 {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+  }
+
+  .card2:hover .card__title2::after,
+  .card2:focus-within .card__title2::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
+}
+
+.card3 {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  max-width: 22rem;
+  height: 28.125rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  --brand-color: hsl(93, 42%, 30%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+
+.card3 > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card__background3 {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card__content3 {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+
+.card__content--container3 {
+  --flow-space: 1.25rem;
+}
+
+.card__title3 {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+}
+
+.card__title3::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--brand-color);
+}
+
+.card__button3 {
+  padding: 0.75em 1.6em;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--brand-color);
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  color: var(--black);
+}
+
+.card__button3:focus {
+  outline: 2px solid black;
+  outline-offset: -5px;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  .card__content3 {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  .card__title3::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  .card__background3 {
+    transition: transform 500ms ease-in;
+  }
+
+  .card__content--container3 > :not(.card__title3),
+  .card__button3 {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .card3:hover,
+  .card3:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  .card3:hover .card__content3,
+  .card3:focus-within .card__content3 {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  .card3:focus-within .card__content3 {
+    transition-duration: 0ms;
+  }
+
+  .card3:hover .card__background3,
+  .card3:focus-within .card__background3 {
+    transform: scale(1.3);
+  }
+
+  .card3:hover .card__content--container3 > :not(.card__title3),
+  .card3:hover .card__button3,
+  .card3:focus-within .card__content--container3 > :not(.card__title3),
+  .card3:focus-within .card__button3 {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+  }
+
+  .card3:hover .card__title3::after,
+  .card3:focus-within .card__title3::after {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
+    transition-delay: 500ms;
+  }
+}
+
+.card4 {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  max-width: 22rem;
+  height: 28.125rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  --brand-color: hsl(240, 4%, 20%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+
+.card4 > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card__background4 {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card__content4 {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+
+.card__content--container4 {
+  --flow-space: 1.25rem;
+}
+
+.card__title4 {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+}
+
+.card__title4::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--brand-color);
+}
+
+.card__button4 {
+  padding: 0.75em 1.6em;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--brand-color);
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  color: var(--black);
+}
+
+.card__button4:focus {
+  outline: 2px solid black;
+  outline-offset: -5px;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+  .card__content4 {
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+    transition-delay: 500ms;
+  }
+
+  .card__title4::after {
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: right;
+  }
+
+  .card__background4 {
+    transition: transform 500ms ease-in;
+  }
+
+  .card__content--container4 > :not(.card__title4),
+  .card__button4 {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+  .card4:hover,
+  .card4:focus-within {
+    transform: scale(1.05);
+    transition: transform 500ms ease-in;
+  }
+
+  .card4:hover .card__content4,
+  .card4:focus-within .card__content4 {
+    transform: translateY(0);
+    transition: transform 500ms ease-in;
+  }
+
+  .card4:focus-within .card__content4 {
+    transition-duration: 0ms;
+  }
+
+  .card4:hover .card__background4,
+  .card4:focus-within .card__background4 {
+    transform: scale(1.3);
+  }
+
+  .card4:hover .card__content--container4 > :not(.card__title4),
+  .card4:hover .card__button4,
+  .card4:focus-within .card__content--container4 > :not(.card__title4),
+  .card4:focus-within .card__button4 {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 1000ms;
+  }
+
+  .card4:hover .card__title4::after,
+  .card4:focus-within .card__title4::after {
     opacity: 1;
     transform: scaleX(1);
     transform-origin: left;
