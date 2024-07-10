@@ -1,0 +1,730 @@
+/* Style */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+
+
+/* RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h2,
+p {
+  margin: 0;
+}
+
+/* GLOBAL STYLES */
+
+h2 {
+  font-size: 2.25rem;
+  font-family: var(--font-title);
+  color: var(--white);
+  line-height: 1.1;
+}
+
+p {
+  font-family: var(--font-text);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--white);
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+/* CARD COMPONENT */
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page1 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+
+.card110 {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  max-width: 22rem;
+  height: 28.125rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  --brand-color: hsl(239, 100%, 50%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+
+.card110 > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card__background110 {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card__content110 {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+
+.card__title110 {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+}
+
+
+.card__button110 {
+  padding: 0.75em 1.6em;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--brand-color);
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  color: var(--black);
+}
+
+
+
+
+
+.card221 {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  max-width: 22rem;
+  height: 28.125rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  --brand-color: hsl(199, 70%, 38%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+
+.card221 > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card__background221 {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card__content221 {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+
+
+
+.card__title221 {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+}
+
+.card__title221::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  background-color: var(--brand-color);
+}
+
+.card__button221 {
+  padding: 0.75em 1.6em;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--brand-color);
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  color: var(--black);
+}
+
+
+
+.card33 {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  max-width: 22rem;
+  height: 28.125rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  --brand-color: hsl(93, 42%, 30%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+
+.card33 > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card__background33 {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card__content33 {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+
+.card__content--container33 {
+  --flow-space: 1.25rem;
+}
+
+.card__title33 {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+}
+
+.card__title33::after {
+  content: "";
+  position: absolute;
+  height: 0.3125rem;
+  width: calc(100% + 1.25rem);
+  bottom: calc((1.25rem - 0.5rem) * -1);
+  left: -1.25rem;
+  background-color: var(--brand-color);
+}
+
+.card__button33 {
+  padding: 0.75em 1.6em;
+  width: fit-content;
+  width: -moz-fit-content; /* Prefijo necesario para Firefox  */
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--brand-color);
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  color: var(--black);
+}
+
+.card__button33:focus {
+  outline: 2px solid black;
+  outline-offset: -5px;
+}
+
+
+
+.card44 {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  max-width: 22rem;
+  height: 28.125rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  --brand-color: hsl(240, 4%, 20%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  /* Fonts */
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+
+.card44 > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card__background44 {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.card__content44 {
+  --flow-space: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  height: 55%;
+  padding: 12% 1.25rem 1.875rem;
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.3) 10%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+
+
+.card__title44 {
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content; 
+}
+
+.card__button44 {
+  padding: 0.75em 1.6em;
+  width: fit-content;
+  width: -moz-fit-content; 
+  font-variant: small-caps;
+  font-weight: bold;
+  border-radius: 0.45em;
+  border: none;
+  background-color: var(--brand-color);
+  font-family: var(--font-title);
+  font-size: 1.125rem;
+  color: var(--black);
+}
+
+
+
+
+
+
+/* page2 */
+
+.container1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 7%;
+  gap: 2rem;
+}
+
+.container1 .card111{
+  position: relative;
+}
+
+.container1 .card111 .face111{
+  width: 300px;
+  height: 200px;
+
+}
+
+.container1 .card11 .face.face111{
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.container1 .card111 .face.face111 .content111 img{
+  width: 300px; /* Adjust this value to make the content larger */
+  height: 200px; /* Adjust this value to make the content larger */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container1 .card111 .face.face111 .content111 h3{
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container1 .card111 .face.face211{
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+.container1 .card111 .face.face211 .content111 p{
+  margin: 0;
+  padding: 0;
+}
+
+.container1 .card111 .face.face211 .content111 a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.container1 .card111 .face.face211 .content111 a:hover{
+  background: #333;
+  color: #fff;
+}
+
+/* page3 */
+
+.maincontainer
+{
+  max-width: 1000px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card111
+{
+  position: relative;
+  margin: 20px 0;
+  width: 300px;
+  height: 400px;
+  background: #5c5b5b;
+
+}
+
+
+.card111 .Box111
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  position: relative;
+  transform-origin: left;
+  z-index: 1;
+  background: #111;
+}
+.card111 .Box111 img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card111 .details111
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  z-index: -1;
+}
+
+/* page4 */
+
+.page4 {
+  padding-bottom: 10%;
+}
+
+
+.abs {
+  position: absolute;
+}
+.rel {
+  position: relative;
+}
+.fix {
+  position: fixed;
+}
+.i {
+  display: inline;
+}
+.ib {
+  display: inline-block;
+}
+.b {
+  display: block;
+}
+.n {
+  display: none;
+}
+.f {
+  display: flex;
+}
+.if {
+  display: inline-flex;
+}
+.g {
+  display: grid;
+}
+.ig {
+  display: inline-grid;
+}
+.vm {
+  vertical-align: middle;
+}
+
+/* ==================================== */
+
+:root {
+  --body-bg: #24282f;
+}
+
+/* ==================================== */
+
+body {
+  font-family: 'Alegreya Sans';
+}
+
+.wrapper222 {
+  padding: 15px;
+}
+
+h2 {
+  position: relative;
+  vertical-align: middle;
+  padding: 10px;
+  padding-left: 25px;
+  margin: 0;
+}
+
+h2 strong {
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+  background: var(--body-bg);
+  padding: 4px 8px;
+}
+
+h2 span {
+  vertical-align: middle;
+  font-size: .7em;
+  color: #aaa;
+  margin-left: 10px;
+}
+
+h2:after {
+  position: absolute;
+  content: '';
+  z-index: 1;
+  bottom: 50%;
+  margin-bottom: -2px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  background: lighten(var(--body-bg), 10%);
+}
+
+.cards222 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card222 {
+  position: relative;
+  margin: 20px;
+  width: 180px;
+  height: 270px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .8);
+}
+
+.card222 img {
+  width: 100%;
+  min-height: 100%;
+}
+
+.card222 figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  background: none;
+  color: #fff;
+}
+
+.card222:after {
+  position: absolute;
+  content: '';
+  z-index: 10;
+  width: 200%;
+  height: 100%;
+  top: -90%;
+  left: -20px;
+  opacity: .1;
+  transform: rotate(45deg);
+  background: linear-gradient(to top, transparent, #fff 15%, rgba(255, 255, 255, .5));
+}
+
+.news222 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.news222 .article222 {
+  position: relative;
+  overflow: hidden;
+  width: 350px;
+  height: 235px;
+  margin: 20px;
+}
+
+.news222 .article222 img {
+  width: 100%;
+  min-height: 100%;
+  transition: .2s;
+}
+
+.news222 .article222 figcaption {
+  position: absolute;
+  font-size: 14px;
+  text-shadow: 0 1px 0 rgba(51, 51, 51, .3);
+  color: #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 40px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+  opacity: 0;
+  transform: scale(1.15);
+  transition: .2s;
+}
+
+.news222 .article222 figcaption h3 {
+  color: #3792e3;
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+
+
+/* page5 */
+
+.center {
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+.article-card0 {
+  width: 350px;
+  height: 220px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  
+}
+
+
+.article-card0 .pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-card0 .content00 {
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  padding: 30px 20px 20px 20px;
+  height: auto;
+  bottom: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+}
+
+.article-card0 .date00
+.article-card0 .title00 {
+  margin: 0;
+}
+
+.article-card0 .date00 {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 4px;
+}
+
+.article-card0 .title00 {
+  font-size: 17px;
+  color: #fff;
+}
